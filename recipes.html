@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Minerva Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img style="max-width: 80px;" src="./public/logo-minerva.webp">
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link" data-translate="nav_home">Home</a>
+                    <a href="about.html" class="nav-link" data-translate="nav_about">About Us</a>
+                    <a href="products.html" class="nav-link" data-translate="nav_products">Products</a>
+                    <a href="sustainability.html" class="nav-link" data-translate="nav_sustainability">Sustainability</a>
+                    <a href="recipes.html" class="nav-link active" data-translate="nav_recipes">Recipes</a>
+                    <a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <select class="language-select" id="languageSelector">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                    </select>
+                    <button class="search-btn">🔍</button>
+                    <button class="mobile-menu-toggle d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <span>🏠 <a href="index.html" data-translate="breadcrumb_home">Home</a> / <span data-translate="nav_recipes">Recipes</span></span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero recipes-hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://cdn.coverr.co/videos/coverr-cooking-steak-on-grill-5240/1080p.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="recipes_hero_title">Delicious Recipes</h1>
+            <p class="hero-subtitle" data-translate="recipes_hero_subtitle">Discover amazing ways to cook with our premium beef</p>
+        </div>
+    </section>
+
+    <!-- Recipe Filters -->
+    <section class="recipe-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-translate="recipes_filter_all">All Recipes</button>
+                <button class="filter-btn" data-filter="grilling" data-translate="recipes_filter_grilling">Grilling</button>
+                <button class="filter-btn" data-filter="roasting" data-translate="recipes_filter_roasting">Roasting</button>
+                <button class="filter-btn" data-filter="quick" data-translate="recipes_filter_quick">Quick Meals</button>
+                <button class="filter-btn" data-filter="gourmet" data-translate="recipes_filter_gourmet">Gourmet</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Grid -->
+    <section class="recipes-section">
+        <div class="container">
+            <div class="row" id="recipesGrid">
+                <!-- Recipe 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 recipe-item" data-category="grilling" data-aos="fade-up" data-aos-delay="0">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500" alt="Grilled Ribeye">
+                            <div class="recipe-time">
+                                <span>⏱️ 30 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-category" data-translate="recipes_cat_grilling">Grilling</span>
+                            <h3 data-translate="recipe1_title">Perfect Grilled Ribeye Steak</h3>
+                            <p data-translate="recipe1_desc">A classic grilled ribeye with herbs and garlic butter.</p>
+                            <div class="recipe-meta">
+                                <span>👨‍🍳 <span data-translate="recipes_difficulty_medium">Medium</span></span>
+                                <span>🍽️ 2 <span data-translate="recipes_servings">servings</span></span>
+                            </div>
+                            <button class="btn-recipe" data-translate="recipes_view_recipe">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 recipe-item" data-category="roasting" data-aos="fade-up" data-aos-delay="100">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=500" alt="Roast Beef">
+                            <div class="recipe-time">
+                                <span>⏱️ 90 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-category" data-translate="recipes_cat_roasting">Roasting</span>
+                            <h3 data-translate="recipe2_title">Classic Sunday Roast Beef</h3>
+                            <p data-translate="recipe2_desc">Traditional roast beef with vegetables and gravy.</p>
+                            <div class="recipe-meta">
+                                <span>👨‍🍳 <span data-translate="recipes_difficulty_easy">Easy</span></span>
+                                <span>🍽️ 6 <span data-translate="recipes_servings">servings</span></span>
+                            </div>
+                            <button class="btn-recipe" data-translate="recipes_view_recipe">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 recipe-item" data-category="quick" data-aos="fade-up" data-aos-delay="200">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Beef Tacos">
+                            <div class="recipe-time">
+                                <span>⏱️ 20 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-category" data-translate="recipes_cat_quick">Quick Meals</span>
+                            <h3 data-translate="recipe3_title">Spicy Beef Tacos</h3>
+                            <p data-translate="recipe3_desc">Quick and delicious beef tacos with fresh toppings.</p>
+                            <div class="recipe-meta">
+                                <span>👨‍🍳 <span data-translate="recipes_difficulty_easy">Easy</span></span>
+                                <span>🍽️ 4 <span data-translate="recipes_servings">servings</span></span>
+                            </div>
+                            <button class="btn-recipe" data-translate="recipes_view_recipe">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4 -->
+                <div class="col-lg-4 col-md-6 mb-4 recipe-item" data-category="gourmet" data-aos="fade-up" data-aos-delay="300">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500" alt="Beef Wellington">
+                            <div class="recipe-time">
+                                <span>⏱️ 120 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-category" data-translate="recipes_cat_gourmet">Gourmet</span>
+                            <h3 data-translate="recipe4_title">Beef Wellington</h3>
+                            <p data-translate="recipe4_desc">An elegant dish with tender beef wrapped in pastry.</p>
+                            <div class="recipe-meta">
+                                <span>👨‍🍳 <span data-translate="recipes_difficulty_hard">Hard</span></span>
+                                <span>🍽️ 4 <span data-translate="recipes_servings">servings</span></span>
+                            </div>
+                            <button class="btn-recipe" data-translate="recipes_view_recipe">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5 -->
+                <div class="col-lg-4 col-md-6 mb-4 recipe-item" data-category="grilling" data-aos="fade-up" data-aos-delay="400">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500" alt="BBQ Ribs">
+                            <div class="recipe-time">
+                                <span>⏱️ 180 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-category" data-translate="recipes_cat_grilling">Grilling</span>
+                            <h3 data-translate="recipe5_title">BBQ Beef Short Ribs</h3>
+                            <p data-translate="recipe5_desc">Slow-cooked ribs with smoky BBQ sauce.</p>
+                            <div class="recipe-meta">
+                                <span>👨‍🍳 <span data-translate="recipes_difficulty_medium">Medium</span></span>
+                                <span>🍽️ 4 <span data-translate="recipes_servings">servings</span></span>
+                            </div>
+                            <button class="btn-recipe" data-translate="recipes_view_recipe">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6 -->
+                <div class="col-lg-4 col-md-6 mb-4 recipe-item" data-category="quick" data-aos="fade-up" data-aos-delay="500">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Beef Stir Fry">
+                            <div class="recipe-time">
+                                <span>⏱️ 25 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <span class="recipe-category" data-translate="recipes_cat_quick">Quick Meals</span>
+                            <h3 data-translate="recipe6_title">Asian Beef Stir Fry</h3>
+                            <p data-translate="recipe6_desc">Quick stir-fried beef with vegetables and soy sauce.</p>
+                            <div class="recipe-meta">
+                                <span>👨‍🍳 <span data-translate="recipes_difficulty_easy">Easy</span></span>
+                                <span>🍽️ 3 <span data-translate="recipes_servings">servings</span></span>
+                            </div>
+                            <button class="btn-recipe" data-translate="recipes_view_recipe">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cooking Tips -->
+    <section class="cooking-tips-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="recipes_tips_title">Cooking Tips</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="0">
+                    <div class="tip-card">
+                        <div class="tip-icon">🔥</div>
+                        <h4 data-translate="tip1_title">Perfect Temperature</h4>
+                        <p data-translate="tip1_text">Let your beef reach room temperature before cooking for even results.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="100">
+                    <div class="tip-card">
+                        <div class="tip-icon">⏰</div>
+                        <h4 data-translate="tip2_title">Rest Your Meat</h4>
+                        <p data-translate="tip2_text">Always let beef rest for 5-10 minutes after cooking to retain juices.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="200">
+                    <div class="tip-card">
+                        <div class="tip-icon">🧂</div>
+                        <h4 data-translate="tip3_title">Season Generously</h4>
+                        <p data-translate="tip3_text">Don't be shy with salt and pepper - they enhance the natural flavors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+
+                    <img style="max-width: 80px;" src="./public/logo-minerva.webp">
+
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link" data-translate="footer_privacy">Privacy Policy</a>
+                    <a href="#" class="footer-link" data-translate="footer_terms">Terms of Service</a>
+                    <a href="#" class="footer-link" data-translate="footer_cookies">Cookie Policy</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer_copyright">© 2025 Minerva Foods. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+           <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+
+    <script src="recipes.js"></script>
+</body>
+</html>

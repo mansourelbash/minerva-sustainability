@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commitment to Sustainability - Minerva Foods</title>
+    <!-- Added Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                     <div class="logo">
+                    <img style="max-width: 80px;" src="./public/logo-minerva.webp">
+                </div>
+                <!-- Updated navigation with proper links -->
+                <nav class="nav">
+                    <a href="index.html" class="nav-link" data-translate="nav_home">Home</a>
+                    <a href="about.html" class="nav-link" data-translate="nav_about">About Us</a>
+                    <a href="products.html" class="nav-link" data-translate="nav_products">Products</a>
+                    <a href="sustainability.html" class="nav-link active"
+                        data-translate="nav_sustainability">Sustainability</a>
+                    <a href="recipes.html" class="nav-link" data-translate="nav_recipes">Recipes</a>
+                    <a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <!-- Updated language selector with EN and AR -->
+                    <select class="language-select" id="languageSelector">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                    </select>
+                    <button class="search-btn">🔍</button>
+                    <!-- Added mobile menu toggle -->
+                    <button class="mobile-menu-toggle d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <span>🏠 <span data-translate="breadcrumb_home">Home</span></span>
+        </div>
+    </div>
+
+    <!-- Hero Section with Video -->
+    <!-- Replaced static image with video background -->
+    <section class="hero">
+        <video class="hero-video" autoplay loop playsinline>
+            <source src="./khirat-video.mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="hero_title">Commitment to<br>Sustainability</h1>
+        </div>
+    </section>
+
+    <!-- Intro Text -->
+    <section class="intro-section">
+        <div class="container">
+            <p class="intro-text" data-translate="intro_text">
+                At Minerva Foods, sustainability is at the core of our business model and part of our DNA. We believe
+                that sustainable practices are essential for the long-term success of our company and the well-being of
+                the communities we serve. Our commitment to sustainability is reflected in our operations, supply chain,
+                and social impact at every level of our business, especially in:
+            </p>
+        </div>
+    </section>
+
+    <!-- Road MAP 2025 -->
+    <section class="roadmap-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="roadmap_title">Road MAP 2025</h2>
+            <p class="section-description" data-translate="roadmap_description">
+                In 2020, we launched our sustainability plan, managed by a specialized committee in close collaboration
+                with a
+                wide variety of our stakeholders. Aligned with the UN Sustainable Development Goals (SDGs), our plan
+                sets out
+                a series of ambitious short, medium and long-term targets.
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="timeline-year">2025</div>
+                    <span class="timeline-badge timeline-badge-current" data-translate="badge_current">Current</span>
+                    <div class="timeline-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" stroke="#2D7A7A" stroke-width="2" />
+                            <path d="M30 15v15l10 5" stroke="#2D7A7A" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="timeline-title" data-translate="timeline_2025_title">Eco-efficiency in managed operations
+                    </h3>
+                    <ul class="timeline-list">
+                        <li data-translate="timeline_2025_1">Reduce water consumption by 15%</li>
+                        <li data-translate="timeline_2025_2">Reduce energy consumption by 10%</li>
+                        <li data-translate="timeline_2025_3">Increase renewable energy use to 30%</li>
+                        <li data-translate="timeline_2025_4">Reduce waste generation by 20%</li>
+                        <li data-translate="timeline_2025_5">Implement circular economy practices</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-year">2030</div>
+                    <span class="timeline-badge timeline-badge-future" data-translate="badge_future">Future</span>
+                    <div class="timeline-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 10c-8 0-15 5-18 12 3 7 10 12 18 12s15-5 18-12c-3-7-10-12-18-12z"
+                                stroke="#2D7A7A" stroke-width="2" />
+                            <circle cx="30" cy="22" r="5" stroke="#2D7A7A" stroke-width="2" />
+                            <path d="M15 40h30M20 48h20" stroke="#2D7A7A" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="timeline-title" data-translate="timeline_2030_title">Supply chain management - direct
+                        suppliers</h3>
+                    <ul class="timeline-list">
+                        <li data-translate="timeline_2030_1">100% traceability of direct suppliers</li>
+                        <li data-translate="timeline_2030_2">Zero deforestation in supply chain</li>
+                        <li data-translate="timeline_2030_3">Sustainable cattle farming practices</li>
+                        <li data-translate="timeline_2030_4">Animal welfare standards implementation</li>
+                        <li data-translate="timeline_2030_5">Supplier capacity building programs</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-year">2035</div>
+                    <span class="timeline-badge timeline-badge-future" data-translate="badge_future">Future</span>
+                    <div class="timeline-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="20" stroke="#2D7A7A" stroke-width="2" />
+                            <path d="M30 20v10l7 7" stroke="#2D7A7A" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="30" cy="30" r="2" fill="#2D7A7A" />
+                        </svg>
+                    </div>
+                    <h3 class="timeline-title" data-translate="timeline_2035_title">Carbon-Neutral by 2035</h3>
+                    <ul class="timeline-list">
+                        <li data-translate="timeline_2035_1">Net-zero emissions across operations</li>
+                        <li data-translate="timeline_2035_2">Carbon offset programs</li>
+                        <li data-translate="timeline_2035_3">Renewable energy at 100%</li>
+                        <li data-translate="timeline_2035_4">Sustainable packaging solutions</li>
+                        <li data-translate="timeline_2035_5">Climate-positive supply chain</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Section -->
+    <section class="strategy-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="strategy_title">Strategy</h2>
+            <p class="section-description" data-translate="strategy_description">
+                Minerva's strategy is based on three pillars: Operational Excellence, Supply Chain Management, and
+                Social
+                Impact. We are committed to continuous improvement in all areas of our business, from farm to fork,
+                ensuring
+                the highest standards of quality, safety, and sustainability.
+            </p>
+
+            <div class="strategy-grid">
+                <div class="strategy-image" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="./public/brown-cattle-in-green-pasture.jpg" alt="Cattle in green pasture">
+                </div>
+                <div class="strategy-image" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="./public/aerial-view-meat-processing-facility.jpg" alt="Aerial view of facility">
+                </div>
+                <div class="strategy-image" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./public/food-safety-workers-in-white-coats-and-hairnets.jpg" alt="Food safety workers">
+                </div>
+            </div>
+
+            <p class="strategy-footer" data-translate="strategy_footer">
+                Leveraging our global presence and local expertise, we strive to deliver value to our customers and
+                stakeholders
+                while minimizing our environmental footprint. Our integrated approach ensures that sustainability is
+                embedded in
+                every aspect of our operations, from sourcing to production to distribution.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content">
+                <div class="quote-image" data-aos="fade-right">
+                    <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="Executive portrait">
+                </div>
+                <div class="quote-text" data-aos="fade-left">
+                    <p data-translate="quote_text">
+                        "We believe that sustainability is not just a responsibility, but an opportunity to lead the
+                        industry
+                        towards a more sustainable future. Our commitment to environmental stewardship, social
+                        responsibility,
+                        and economic viability drives everything we do. We are working with our suppliers, customers,
+                        and
+                        partners to create a more sustainable food system that benefits everyone - from farmers to
+                        consumers.
+                        Through innovation, collaboration, and transparency, we are building a business that not only
+                        meets
+                        the needs of today but also preserves resources for future generations. Sustainability is at the
+                        heart
+                        of our strategy, and we are committed to making a positive impact on the planet and the
+                        communities
+                        we serve."
+                    </p>
+                    <p class="quote-author" data-translate="quote_author">- CEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Goals Section -->
+    <section class="goals-section">
+        <div class="container">
+            <h2 class="goals-heading" data-translate="goals_heading">OUR<br>GOALS</h2>
+            <p class="goals-intro" data-translate="goals_intro">
+                Our sustainability goals are aligned with the United Nations Sustainable Development Goals (SDGs) and
+                reflect
+                our commitment to creating long-term value for all stakeholders. We have set ambitious targets across
+                four
+                key areas:
+            </p>
+
+            <div class="goals-grid">
+                <div class="goal-card" data-aos="flip-left" data-aos-delay="0">
+                    <div class="goal-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8v8M24 32v8M8 24h8M32 24h8M14 14l4 4M30 30l4 4M14 34l4-4M30 18l4-4"
+                                stroke="#2D7A7A" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="24" cy="24" r="6" stroke="#2D7A7A" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="goal-title" data-translate="goal1_title">Eco-efficiency in<br>managed operations</h3>
+                    <p class="goal-description" data-translate="goal1_description">
+                        We are committed to reducing our environmental footprint by improving resource efficiency across
+                        all
+                        our operations. This includes reducing water and energy consumption, minimizing waste, and
+                        increasing
+                        the use of renewable energy sources.
+                    </p>
+                    <a href="#" class="goal-link" data-translate="learn_more">→ Learn more</a>
+                </div>
+
+                <div class="goal-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="goal-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 24h32M16 16l-8 8 8 8M32 16l8 8-8 8" stroke="#2D7A7A" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="24" cy="24" r="3" fill="#2D7A7A" />
+                        </svg>
+                    </div>
+                    <h3 class="goal-title"><span data-translate="goal2_title">Supply chain<br>management</span><br><span
+                            class="goal-subtitle" data-translate="goal2_subtitle">direct suppliers</span></h3>
+                    <p class="goal-description" data-translate="goal2_description">
+                        We work closely with our direct suppliers to ensure full traceability and compliance with our
+                        sustainability standards. This includes monitoring for deforestation, promoting animal welfare,
+                        and supporting sustainable farming practices.
+                    </p>
+                    <a href="#" class="goal-link" data-translate="learn_more">→ Learn more</a>
+                </div>
+
+                <div class="goal-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="goal-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="20" width="32" height="20" rx="2" stroke="#2D7A7A" stroke-width="2" />
+                            <path d="M16 20V14a8 8 0 0116 0v6" stroke="#2D7A7A" stroke-width="2"
+                                stroke-linecap="round" />
+                            <circle cx="24" cy="30" r="2" fill="#2D7A7A" />
+                        </svg>
+                    </div>
+                    <h3 class="goal-title"><span data-translate="goal3_title">Supply chain<br>management</span><br><span
+                            class="goal-subtitle" data-translate="goal3_subtitle">indirect providers</span></h3>
+                    <p class="goal-description" data-translate="goal3_description">
+                        Extending our sustainability efforts beyond direct suppliers, we are working to engage and
+                        support
+                        indirect providers in our supply chain. This includes capacity building, training programs, and
+                        collaborative initiatives to promote sustainable practices.
+                    </p>
+                    <a href="#" class="goal-link" data-translate="learn_more">→ Learn more</a>
+                </div>
+
+                <div class="goal-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="goal-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8c-8 0-14 6-14 14 0 10 14 18 14 18s14-8 14-18c0-8-6-14-14-14z" stroke="#2D7A7A"
+                                stroke-width="2" />
+                            <path d="M20 18l2 4 4-6" stroke="#2D7A7A" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="goal-title" data-translate="goal4_title">Low carbon emission<br>livestock</h3>
+                    <p class="goal-description" data-translate="goal4_description">
+                        We are committed to reducing greenhouse gas emissions from livestock production through improved
+                        genetics, nutrition, and management practices. Our goal is to promote climate-smart agriculture
+                        and support the transition to low-carbon livestock systems.
+                    </p>
+                    <a href="#" class="goal-link" data-translate="learn_more">→ Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-translate="cta_title">The race to<br>net issue<br>cannot be one<br><span
+                        class="cta-highlight">collective effort</span></h2>
+                <div class="cta-text">
+                    <p data-translate="cta_text1">
+                        Minerva Foods is engaged in collaborative initiatives to promote sustainable practices across
+                        the
+                        beef value chain. We believe that achieving net-zero emissions requires collective action from
+                        all
+                        stakeholders - from farmers and suppliers to customers and consumers.
+                    </p>
+                    <p data-translate="cta_text2">
+                        We are committed to transparency and accountability in our sustainability journey. Through
+                        partnerships,
+                        innovation, and continuous improvement, we are working towards a more sustainable future for the
+                        industry and the planet. Join us in this collective effort to create positive change and build a
+                        more sustainable food system for generations to come.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Content Section -->
+    <section class="related-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="related_title">Related Content</h2>
+            <div class="related-grid">
+                <div class="related-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="related-image">
+                        <img src="./public/green-pasture-landscape.jpg" alt="Green pasture">
+                    </div>
+                    <div class="related-content">
+                        <span class="related-tag" data-translate="related_tag1">Sustainability Report</span>
+                        <h3 class="related-title" data-translate="related_title1">Annual Sustainability Report 2024</h3>
+                    </div>
+                </div>
+
+                <div class="related-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="related-image">
+                        <img src="./public/renewable-energy-solar-panels.png" alt="Renewable energy">
+                        <div class="related-overlay">
+                            <span class="related-label" data-translate="related_label2">Renewable Programs</span>
+                        </div>
+                    </div>
+                    <div class="related-content">
+                        <span class="related-tag" data-translate="related_tag2">Energy</span>
+                        <h3 class="related-title" data-translate="related_title2">Renewable Energy Initiatives</h3>
+                    </div>
+                </div>
+
+                <div class="related-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="related-image">
+                        <img src="./public/community-development-people.jpg" alt="Community development">
+                    </div>
+                    <div class="related-content">
+                        <span class="related-tag" data-translate="related_tag3">Social Impact</span>
+                        <h3 class="related-title" data-translate="related_title3">Community Development Programs</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+
+                    <img style="max-width: 80px;" src="./public/logo-minerva.webp">
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link" data-translate="footer_privacy">Privacy Policy</a>
+                    <a href="#" class="footer-link" data-translate="footer_terms">Terms of Service</a>
+                    <a href="#" class="footer-link" data-translate="footer_cookies">Cookie Policy</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer_copyright">© 2025 Minerva Foods. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Added Bootstrap JS, jQuery, AOS animation library, and custom scripts -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

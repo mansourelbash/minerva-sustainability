@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Minerva Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                    <div class="logo">
+                    <img style="max-width: 80px;" src="./public/logo-minerva.webp">
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link" data-translate="nav_home">Home</a>
+                    <a href="about.html" class="nav-link active" data-translate="nav_about">About Us</a>
+                    <a href="products.html" class="nav-link" data-translate="nav_products">Products</a>
+                    <a href="sustainability.html" class="nav-link" data-translate="nav_sustainability">Sustainability</a>
+                    <a href="recipes.html" class="nav-link" data-translate="nav_recipes">Recipes</a>
+                    <a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <select class="language-select" id="languageSelector">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                    </select>
+                    <button class="search-btn">🔍</button>
+                    <button class="mobile-menu-toggle d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <span>🏠 <a href="index.html" data-translate="breadcrumb_home">Home</a> / <span data-translate="nav_about">About Us</span></span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero about-hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://cdn.coverr.co/videos/coverr-meat-processing-facility-workers-5238/1080p.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="about_hero_title">About Minerva Foods</h1>
+            <p class="hero-subtitle" data-translate="about_hero_subtitle">Leading the global meat industry with excellence and sustainability</p>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="company-overview">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title" data-translate="about_overview_title">Our Story</h2>
+                    <p data-translate="about_overview_text1">
+                        Minerva Foods is one of the largest beef exporters in South America and a leading player in the global meat industry. 
+                        With over six decades of experience, we have built a reputation for quality, innovation, and sustainability.
+                    </p>
+                    <p data-translate="about_overview_text2">
+                        Our journey began in 1957, and today we operate state-of-the-art facilities across South America, serving customers 
+                        in more than 100 countries worldwide. We are committed to delivering premium quality products while maintaining the 
+                        highest standards of food safety, animal welfare, and environmental responsibility.
+                    </p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="./public/aerial-view-meat-processing-facility.jpg" alt="Minerva Foods Facility" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-count="60">60+</h3>
+                        <p class="stat-label" data-translate="about_stat1">Years of Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-count="100">100+</h3>
+                        <p class="stat-label" data-translate="about_stat2">Countries Served</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-count="25">25+</h3>
+                        <p class="stat-label" data-translate="about_stat3">Production Facilities</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-count="15000">15,000+</h3>
+                        <p class="stat-label" data-translate="about_stat4">Employees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="flip-left">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <path d="M30 10l8 16 18 2-13 13 3 18-16-9-16 9 3-18-13-13 18-2z" stroke="#2D7A7A" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="about_mission_title">Our Mission</h3>
+                        <p data-translate="about_mission_text">
+                            To be the leading global provider of high-quality beef products, delivering excellence through innovation, 
+                            sustainability, and a commitment to our customers, employees, and communities.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="flip-right">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="20" stroke="#2D7A7A" stroke-width="2"/>
+                                <path d="M20 30h20M30 20v20" stroke="#2D7A7A" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="about_vision_title">Our Vision</h3>
+                        <p data-translate="about_vision_text">
+                            To transform the global meat industry by setting new standards for quality, sustainability, and social 
+                            responsibility, creating value for all stakeholders while protecting our planet for future generations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="about_values_title">Our Values</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="value-card">
+                        <h4 data-translate="about_value1_title">Excellence</h4>
+                        <p data-translate="about_value1_text">We strive for excellence in everything we do, from product quality to customer service.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-card">
+                        <h4 data-translate="about_value2_title">Integrity</h4>
+                        <p data-translate="about_value2_text">We conduct our business with honesty, transparency, and ethical practices.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-card">
+                        <h4 data-translate="about_value3_title">Innovation</h4>
+                        <p data-translate="about_value3_text">We embrace innovation to continuously improve our processes and products.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-card">
+                        <h4 data-translate="about_value4_title">Sustainability</h4>
+                        <p data-translate="about_value4_text">We are committed to sustainable practices that protect our environment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-card">
+                        <h4 data-translate="about_value5_title">Respect</h4>
+                        <p data-translate="about_value5_text">We treat all people with dignity and respect, fostering an inclusive culture.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="value-card">
+                        <h4 data-translate="about_value6_title">Collaboration</h4>
+                        <p data-translate="about_value6_text">We work together with partners and stakeholders to achieve shared goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="about_team_title">Leadership Team</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="team-card">
+                        <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="CEO" class="team-img">
+                        <h4 data-translate="about_team1_name">Fernando Galletti de Queiroz</h4>
+                        <p class="team-role" data-translate="about_team1_role">Chief Executive Officer</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card">
+                        <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="CFO" class="team-img">
+                        <h4 data-translate="about_team2_name">Edison Ticle</h4>
+                        <p class="team-role" data-translate="about_team2_role">Chief Financial Officer</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="COO" class="team-img">
+                        <h4 data-translate="about_team3_name">Tacito Neto</h4>
+                        <p class="team-role" data-translate="about_team3_role">Chief Operating Officer</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card">
+                        <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="CSO" class="team-img">
+                        <h4 data-translate="about_team4_name">Maria Silva</h4>
+                        <p class="team-role" data-translate="about_team4_role">Chief Sustainability Officer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+
+                    <img style="max-width: 80px;" src="./public/logo-minerva.webp">
+
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link" data-translate="footer_privacy">Privacy Policy</a>
+                    <a href="#" class="footer-link" data-translate="footer_terms">Terms of Service</a>
+                    <a href="#" class="footer-link" data-translate="footer_cookies">Cookie Policy</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer_copyright">© 2025 Minerva Foods. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+        <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+   
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Minerva Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                     <div class="logo">
+                    <img style="max-width: 80px;" src="./public/logo-minerva.webp">
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link" data-translate="nav_home">Home</a>
+                    <a href="about.html" class="nav-link" data-translate="nav_about">About Us</a>
+                    <a href="products.html" class="nav-link active" data-translate="nav_products">Products</a>
+                    <a href="sustainability.html" class="nav-link" data-translate="nav_sustainability">Sustainability</a>
+                    <a href="recipes.html" class="nav-link" data-translate="nav_recipes">Recipes</a>
+                    <a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <select class="language-select" id="languageSelector">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                    </select>
+                    <button class="search-btn">🔍</button>
+                    <button class="mobile-menu-toggle d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <span>🏠 <a href="index.html" data-translate="breadcrumb_home">Home</a> / <span data-translate="nav_products">Products</span></span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero products-hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://cdn.coverr.co/videos/coverr-fresh-beef-cuts-on-display-5239/1080p.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="products_hero_title">Premium Quality Products</h1>
+            <p class="hero-subtitle" data-translate="products_hero_subtitle">From farm to table, excellence in every cut</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="products_categories_title">Our Product Range</h2>
+            
+            <!-- Beef Products -->
+            <div class="category-section mb-5">
+                <h3 class="category-title" data-translate="products_beef_title">Premium Beef</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=500" alt="Prime Cuts">
+                                <div class="product-badge" data-translate="products_badge_premium">Premium</div>
+                            </div>
+                            <div class="product-content">
+                                <h4 data-translate="products_beef1_name">Prime Cuts</h4>
+                                <p data-translate="products_beef1_desc">The finest selection of premium beef cuts, perfect for grilling and special occasions.</p>
+                                <button class="btn-primary" data-translate="products_learn_more">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=500" alt="Ribeye Steaks">
+                            </div>
+                            <div class="product-content">
+                                <h4 data-translate="products_beef2_name">Ribeye Steaks</h4>
+                                <p data-translate="products_beef2_desc">Marbled to perfection, our ribeye steaks deliver exceptional flavor and tenderness.</p>
+                                <button class="btn-primary" data-translate="products_learn_more">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=500" alt="Ground Beef">
+                            </div>
+                            <div class="product-content">
+                                <h4 data-translate="products_beef3_name">Ground Beef</h4>
+                                <p data-translate="products_beef3_desc">High-quality ground beef, ideal for burgers, meatballs, and everyday cooking.</p>
+                                <button class="btn-primary" data-translate="products_learn_more">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=500" alt="Tenderloin">
+                                <div class="product-badge" data-translate="products_badge_premium">Premium</div>
+                            </div>
+                            <div class="product-content">
+                                <h4 data-translate="products_beef4_name">Tenderloin</h4>
+                                <p data-translate="products_beef4_desc">The most tender cut of beef, perfect for elegant dining experiences.</p>
+                                <button class="btn-primary" data-translate="products_learn_more">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=500" alt="Sirloin">
+                            </div>
+                            <div class="product-content">
+                                <h4 data-translate="products_beef5_name">Sirloin</h4>
+                                <p data-translate="products_beef5_desc">Lean and flavorful, our sirloin cuts are perfect for health-conscious consumers.</p>
+                                <button class="btn-primary" data-translate="products_learn_more">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500" alt="Short Ribs">
+                            </div>
+                            <div class="product-content">
+                                <h4 data-translate="products_beef6_name">Short Ribs</h4>
+                                <p data-translate="products_beef6_desc">Rich and succulent, ideal for slow cooking and braising.</p>
+                                <button class="btn-primary" data-translate="products_learn_more">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Standards -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <h2 class="section-title" data-translate="products_quality_title">Our Quality Standards</h2>
+                    <p data-translate="products_quality_text1">
+                        At Minerva Foods, quality is not just a promise—it's our commitment. Every product undergoes rigorous 
+                        quality control processes to ensure it meets the highest international standards.
+                    </p>
+                    <ul class="quality-list">
+                        <li data-aos="fade-up" data-aos-delay="0">
+                            <strong data-translate="products_quality_item1_title">Traceability:</strong>
+                            <span data-translate="products_quality_item1_text">Full tracking from farm to fork</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <strong data-translate="products_quality_item2_title">Food Safety:</strong>
+                            <span data-translate="products_quality_item2_text">HACCP and ISO certified facilities</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <strong data-translate="products_quality_item3_title">Animal Welfare:</strong>
+                            <span data-translate="products_quality_item3_text">Humane handling practices</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <strong data-translate="products_quality_item4_title">Sustainability:</strong>
+                            <span data-translate="products_quality_item4_text">Environmentally responsible production</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="./public/food-safety-workers-in-white-coats-and-hairnets.jpg" alt="Quality Control" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="products_certifications_title">Certifications & Accreditations</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="cert-card">
+                        <div class="cert-icon">ISO 9001</div>
+                        <p data-translate="products_cert1">Quality Management</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-card">
+                        <div class="cert-icon">HACCP</div>
+                        <p data-translate="products_cert2">Food Safety</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cert-card">
+                        <div class="cert-icon">HALAL</div>
+                        <p data-translate="products_cert3">Halal Certified</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cert-card">
+                        <div class="cert-icon">KOSHER</div>
+                        <p data-translate="products_cert4">Kosher Certified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section products-cta">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2 class="cta-title" data-translate="products_cta_title">Interested in Our Products?</h2>
+                <p class="cta-text" data-translate="products_cta_text">Contact our sales team to learn more about our product range and distribution options.</p>
+                <a href="contact.html" class="btn-cta" data-translate="products_cta_button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                       
+                    <img style="max-width: 80px;" src="./public/logo-minerva.webp">
+               
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link" data-translate="footer_privacy">Privacy Policy</a>
+                    <a href="#" class="footer-link" data-translate="footer_terms">Terms of Service</a>
+                    <a href="#" class="footer-link" data-translate="footer_cookies">Cookie Policy</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer_copyright">© 2025 Minerva Foods. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+           <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
