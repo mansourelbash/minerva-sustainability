@@ -1,17 +1,12 @@
 const translations = {
   en: {
-    // Navigation
     nav_home: "Home",
     nav_products: "Products",
     nav_why_us: "Why Us?",
     nav_vision: "Our Vision",
     nav_about: "About Company",
     nav_contact: "Contact Us",
-
-    // Breadcrumb
     breadcrumb_home: "Home",
-
-    // Why Us Page
     why_us_hero_title: "Why Choose Khayrat Al-Iraq?",
     why_us_hero_subtitle: "Your trusted partner in Iraq's agricultural renaissance",
     why_us_experience_title: "Three Decades of Excellence",
@@ -26,8 +21,6 @@ const translations = {
     why_us_partners_text: "We work with international leaders like Minerva S.A., Anya Marine, and Trading Sul-Americana, bringing global expertise to local production.",
     why_us_food_security_title: "National Food Security",
     why_us_food_security_text: "Our integrated approach reduces import dependency and strengthens Iraq's food security while supporting local economic development.",
-
-    // Vision Page
     vision_hero_title: "Our Vision for Iraq's Future",
     vision_hero_subtitle: "Leading an integrated food renaissance",
     vision_main_title: "Our Vision",
@@ -47,94 +40,67 @@ const translations = {
     vision_impact3: "Create sustainable employment",
     vision_impact4: "Support national economic development",
     vision_impact5: "Promote environmental sustainability",
-
-    // Hero
     hero_title: "Leading Iraq's<br>Agricultural Renaissance",
     hero_badge: "Khayrat Al-Iraq Farms",
     hero_description: "From humble beginnings to Iraq's largest integrated agricultural project",
     hero_btn_primary: "Discover Our Story",
     hero_btn_video: "🎥 Watch Our Video",
-
-    // Intro
     intro_text:
       "At Khayrat Al-Iraq, we aspire to lead an integrated food renaissance in Iraq through an advanced agricultural and livestock production system. Our vision is built on major strategic projects including Iraq's largest organic fertilizer manufacturing facility, establishing a modern slaughterhouse with international standards, and achieving self-sufficiency in feed through our farms exceeding 6,000 dunums.",
-
-    // Roadmap
     roadmap_title: "Our Journey: From 1994 to 2025",
     roadmap_description:
       "Founded in 1994 with an initial production capacity of 150 calves, our company has continuously evolved to become Iraq's leading livestock producer. Through strategic expansions and technological innovations, we have grown to become the largest cattle fattening operation in Iraq.",
     badge_current: "Current",
     badge_future: "Future",
-
-    // Timeline 1994-2007
     timeline_2025_title: "Foundation & Early Growth (1994-2007)",
     timeline_2025_1: "1994: Founded with 150 calf capacity",
     timeline_2025_2: "1998: First expansion increased production capacity",
     timeline_2025_3: "2001: Adopted modern feeding techniques",
     timeline_2025_4: "2007: Major breakthrough - Al-Husseiniya facility",
     timeline_2025_5: "2,000 head capacity in Baghdad, Iraq",
-
-    // Timeline 2010-2016
     timeline_2030_title: "Expansion & Innovation (2010-2016)",
     timeline_2030_1: "2010: Reached 10,000 head capacity",
     timeline_2030_2: "2013: Expanded to 15,000 head capacity",
     timeline_2030_3: "2016: Achieved 20,000 head capacity",
     timeline_2030_4: "Advanced management practices implemented",
     timeline_2030_5: "Enhanced animal welfare standards",
-
-    // Timeline 2021-Future
     timeline_2035_title: "Strategic Mega Project (2021-Future)",
     timeline_2035_1: "2021: 60,000 head facility in Al-Zubaidiya, Wasit",
     timeline_2035_2: "Iraq's largest livestock facility",
     timeline_2035_3: "6,000 dunums agricultural land",
     timeline_2035_4: "Self-sufficient feed production",
     timeline_2035_5: "Integrated agricultural-livestock system",
-
-    // Strategy
     strategy_title: "Strategic Objectives",
     strategy_description:
       "Our strategy is built on achieving complete self-sufficiency and creating an integrated agricultural ecosystem. We are committed to establishing Iraq's largest organic fertilizer plant, operating a modern slaughterhouse to enhance the value chain from farm to consumer, and supporting Iraq's vision of food security.",
     strategy_footer:
       "Through our integrated approach combining livestock and agriculture, we create a sustainable cycle where agricultural waste becomes organic fertilizer, supporting soil health and productivity. This integration reduces import dependency and strengthens national food security while contributing to economic development.",
-
-    // Quote
     quote_text:
       "We believe that national food security begins with fertile land, where feed integrates with livestock, and their waste transforms into productive energy that revives the soil and supports a sustainable and healthy economy for generations. Our commitment to excellence drives us to lead Iraq's agricultural renaissance through innovative projects and sustainable practices.",
     quote_author: "- CEO, Khayrat Al-Iraq",
-
-    // Goals
     goals_heading: "OUR<br>STRATEGIC GOALS",
     goals_intro:
       "Our strategic objectives are designed to achieve complete food integration and self-sufficiency while contributing to Iraq's economic development. We focus on four key areas that represent our commitment to sustainable growth:",
-
     goal1_title: "Feed Production<br>Self-Sufficiency",
     goal1_description:
       "Achieve complete self-sufficiency in feed production through our farms exceeding 6,000 dunums. We cultivate corn, silage, barley, and alfalfa to ensure sustainable feed supply for our livestock operations.",
-
     goal2_title: "Modern<br>Slaughterhouse",
     goal2_subtitle: "International Standards",
     goal2_description:
       "Establish and operate a modern slaughterhouse with international standards to enhance efficiency throughout the value chain from farm to consumer, ensuring highest quality and safety standards.",
-
     goal3_title: "Organic Fertilizer<br>Production",
     goal3_subtitle: "Iraq's Largest Facility",
     goal3_description:
       "Develop Iraq's largest organic fertilizer manufacturing plant, converting livestock waste into high-quality organic fertilizer that improves soil fertility and supports sustainable agriculture.",
-
     goal4_title: "Food Security &<br>Quality Standards",
     goal4_description:
       "Achieve the highest standards of food quality and safety both locally and internationally while supporting Iraq's vision of enhancing food security and reducing import dependency.",
-
     learn_more: "→ Learn more",
-
-    // CTA
     cta_title: "The race to<br>net issue<br>cannot be one<br>collective effort",
     cta_text1:
       "Minerva Foods is engaged in collaborative initiatives to promote sustainable practices across the beef value chain. We believe that achieving net-zero emissions requires collective action from all stakeholders - from farmers and suppliers to customers and consumers.",
     cta_text2:
       "We are committed to transparency and accountability in our sustainability journey. Through partnerships, innovation, and continuous improvement, we are working towards a more sustainable future for the industry and the planet. Join us in this collective effort to create positive change and build a more sustainable food system for generations to come.",
-
-    // Related
     related_title: "Related Content",
     related_tag1: "Sustainability Report",
     related_title1: "Annual Sustainability Report 2024",
@@ -143,14 +109,10 @@ const translations = {
     related_title2: "Renewable Energy Initiatives",
     related_tag3: "Social Impact",
     related_title3: "Community Development Programs",
-
-    // Footer
     footer_privacy: "Privacy Policy",
     footer_terms: "Terms of Service", 
     footer_cookies: "Cookie Policy",
     footer_copyright: "© 2025 Khayrat Al-Iraq. All rights reserved.",
-
-    // Partners Section
     partners_title: "Our Key Export Partners",
     partners_subtitle: "Working with leading global companies",
     partner1_name: "Minerva S.A.",
@@ -159,8 +121,6 @@ const translations = {
     partner2_desc: "Specialized in livestock trading and livestock transport ship brokerage since 2015",
     partner3_name: "Trading Sul-Americana", 
     partner3_desc: "Brazilian company founded in 1994, specialized in import/export of live cattle and beef",
-
-    // About Page
     about_hero_title: "About Khayrat Al-Iraq",
     about_hero_subtitle: "Leading Iraq's livestock and agricultural revolution",
     about_overview_title: "Our Story",
@@ -200,8 +160,6 @@ const translations = {
     about_team3_role: "Chief Operating Officer",
     about_team4_name: "Maria Silva",
     about_team4_role: "Chief Sustainability Officer",
-
-    // Products Page
     products_hero_title: "Premium Iraqi Livestock & Agricultural Products",
     products_hero_subtitle: "From our integrated farms to your table, excellence in every product",
     products_categories_title: "Our Product Range",
@@ -239,8 +197,6 @@ const translations = {
     products_cta_title: "Interested in Our Products?",
     products_cta_text: "Contact our sales team to learn more about our product range and distribution options.",
     products_cta_button: "Contact Us",
-
-    // Recipes Page
     recipes_hero_title: "Traditional Iraqi Recipes",
     recipes_hero_subtitle: "Discover amazing ways to cook with our premium Iraqi beef",
     recipes_filter_all: "All Recipes",
@@ -276,11 +232,7 @@ const translations = {
     tip2_text: "Always let beef rest for 5-10 minutes after cooking to retain juices.",
     tip3_title: "Season Generously",
     tip3_text: "Don't be shy with salt and pepper - they enhance the natural flavors.",
-
-    // Contact page
     contact_hero_title: "Get In Touch",
-
-    // Why Us Page
     why_us_hero_title: "Why Choose Khayrat Al-Iraq?",
     why_us_hero_subtitle: "Your trusted partner in Iraq's agricultural renaissance",
     why_us_experience_title: "Three Decades of Excellence",
@@ -306,8 +258,6 @@ const translations = {
     why_us_cta_title: "Ready to Partner with Iraq's Agricultural Leader?",
     why_us_cta_text: "Join us in building a sustainable future for Iraq's food security and economic development.",
     why_us_cta_button: "Contact Us Today",
-
-    // Vision Page
     vision_hero_title: "Our Vision for Iraq's Future",
     vision_hero_subtitle: "Leading an integrated food renaissance",
     vision_main_title: "Our Vision",
@@ -363,18 +313,13 @@ const translations = {
     contact_farm2_address: "Al-Zubaidiya District - Wasit Province",
   },
   ar: {
-    // Navigation
     nav_home: "الرئيسية",
     nav_products: "منتجات",
     nav_why_us: "لماذا نحن؟",
     nav_vision: "رؤيتنا",
     nav_about: "عن شركة",
     nav_contact: "اتصال بنا",
-
-    // Breadcrumb
     breadcrumb_home: "الرئيسية",
-
-    // Why Us Page
     why_us_hero_title: "لماذا تختار خيرات العراق؟",
     why_us_hero_subtitle: "شريكك الموثوق في النهضة الزراعية العراقية",
     why_us_experience_title: "ثلاثة عقود من التميز",
@@ -389,8 +334,6 @@ const translations = {
     why_us_partners_text: "نعمل مع قادة دوليين مثل مينيرفا إس.إيه وأنيا مارين وتريدنغ سول-أمريكانا، جالبين الخبرة العالمية للإنتاج المحلي.",
     why_us_food_security_title: "الأمن الغذائي الوطني",
     why_us_food_security_text: "نهجنا المتكامل يقلل الاعتماد على الاستيراد ويعزز الأمن الغذائي العراقي مع دعم التنمية الاقتصادية المحلية.",
-
-    // Vision Page
     vision_hero_title: "رؤيتنا لمستقبل العراق",
     vision_hero_subtitle: "قيادة نهضة غذائية متكاملة",
     vision_main_title: "رؤيتنا",
@@ -410,95 +353,68 @@ const translations = {
     vision_impact3: "خلق فرص عمل مستدامة",
     vision_impact4: "دعم التنمية الاقتصادية الوطنية",
     vision_impact5: "تعزيز الاستدامة البيئية",
-
-    // Hero
     hero_title: "قيادة النهضة<br>الزراعية في العراق",
     hero_badge: "مزارع خيرات العراق",
     hero_description: "من البدايات المتواضعة إلى أكبر مشروع زراعي متكامل في العراق",
     hero_btn_primary: "اكتشف قصتنا",
     hero_btn_video: "🎥 شاهد فيديونا",
     hero_btn_secondary: "منتجاتنا",
-
-    // Intro
     intro_text:
       "في خيرات العراق، نطمح إلى قيادة نهضة غذائية متكاملة في العراق من خلال منظومة إنتاج زراعي وحيواني متطورة. رؤيتنا مبنية على مشاريع استراتيجية كبرى تشمل تصنيع األسمدة العضوية األكبر من نوعه في البالد، وإنشاء مجزرة حديثة بمعايير عالمية، وتحقيق االكتفاء الذاتي من األعالف عبر استثمار مزارعنا التي تتجاوز مساحتها 6000 دونم.",
-
-    // Roadmap
     roadmap_title: "رحلتنا: من 1994 إلى 2025",
     roadmap_description:
       "تأسست شركتنا في عام 1994 بطاقة إنتاجية أولية بلغت 150 عجل، وركزت منذ البداية على تربية وتسمين العجول بجودة عالية. من خلال التوسعات الاستراتيجية والابتكارات التقنية، نمت لتصبح أكبر عملية تسمين ماشية في العراق.",
     badge_current: "الحالي",
     badge_future: "المستقبل",
-
-    // Timeline 1994-2007
     timeline_2025_title: "التأسيس والنمو المبكر (1994-2007)",
     timeline_2025_1: "1994: التأسيس بطاقة 150 عجل",
     timeline_2025_2: "1998: أول توسع زاد الطاقة الإنتاجية",
     timeline_2025_3: "2001: اعتماد تقنيات التغذية الحديثة",
     timeline_2025_4: "2007: طفرة كبرى - منشأة الحسينية",
     timeline_2025_5: "طاقة 2000 رأس في بغداد، العراق",
-
-    // Timeline 2010-2016
     timeline_2030_title: "التوسع والابتكار (2010-2016)",
     timeline_2030_1: "2010: وصلت الطاقة إلى 10,000 رأس",
     timeline_2030_2: "2013: توسعت إلى 15,000 رأس",
     timeline_2030_3: "2016: حققت طاقة 20,000 رأس",
     timeline_2030_4: "تنفيذ ممارسات إدارية متطورة",
     timeline_2030_5: "تعزيز معايير رعاية الحيوان",
-
-    // Timeline 2021-Future
     timeline_2035_title: "المشروع الاستراتيجي الضخم (2021-المستقبل)",
     timeline_2035_1: "2021: منشأة 60,000 رأس في الزبيدية، واسط",
     timeline_2035_2: "أكبر منشأة ثروة حيوانية في العراق",
     timeline_2035_3: "6,000 دونم أراضي زراعية",
     timeline_2035_4: "إنتاج علف ذاتي الاكتفاء",
     timeline_2035_5: "نظام زراعي-حيواني متكامل",
-
-    // Strategy
     strategy_title: "الأهداف الاستراتيجية",
     strategy_description:
       "استراتيجيتنا مبنية على تحقيق الاكتفاء الذاتي الكامل وخلق نظام بيئي زراعي متكامل. نحن ملتزمون بإنشاء أكبر مصنع أسمدة عضوية في العراق، وتشغيل مجزرة حديثة لتعزيز سلسلة القيمة من المزرعة إلى المستهلك، ودعم رؤية العراق في الأمن الغذائي.",
     strategy_footer:
       "من خلال نهجنا المتكامل الذي يجمع بين الثروة الحيوانية والزراعة، نخلق دورة مستدامة حيث تتحول النفايات الزراعية إلى سماد عضوي، مما يدعم صحة التربة والإنتاجية. هذا التكامل يقلل الاعتماد على الاستيراد ويعزز الأمن الغذائي الوطني.",
-
-    // Quote
     quote_text:
       "نؤمن أن األمن الغذائي الوطني يبدأ من أرض خصبة، يتكامل فيها العلف مع الثروة الحيوانية، وتتحول فضالتها إلى طاقة إنتاجية تعيد إحياء التربة وتدعم اقتصاداً مستداماً وصحياً لألجيال. التزامنا بالتميز يدفعنا لقيادة النهضة الزراعية في العراق من خلال المشاريع المبتكرة والممارسات المستدامة.",
     quote_author: "- الرئيس التنفيذي، خيرات العراق",
-
-    // Goals
     goals_heading: "أهدافنا<br>الاستراتيجية",
     goals_intro:
       "أهدافنا الاستراتيجية مصممة لتحقيق التكامل الغذائي الكامل والاكتفاء الذاتي مع المساهمة في التنمية الاقتصادية للعراق. نركز على أربعة مجالات رئيسية تمثل التزامنا بالنمو المستدام:",
-
     goal1_title: "الاكتفاء الذاتي<br>من الأعلاف",
     goal1_description:
       "تحقيق الاكتفاء الذاتي الكامل من إنتاج الأعلاف من خلال مزارعنا التي تتجاوز 6,000 دونم. نزرع الذرة والسيلاج والشعير والبرسيم لضمان إمداد مستدام من الأعلاف لعمليات الثروة الحيوانية.",
-
     goal2_title: "المجزرة<br>الحديثة",
     goal2_subtitle: "معايير دولية",
     goal2_description:
       "إنشاء وتشغيل مجزرة حديثة بمعايير دولية لتعزيز الكفاءة في سلسلة القيمة من المزرعة إلى المستهلك، مع ضمان أعلى معايير الجودة والسلامة.",
-
     goal3_title: "إنتاج الأسمدة<br>العضوية",
     goal3_subtitle: "أكبر منشأة في العراق",
     goal3_description:
       "تطوير أكبر مصنع لتصنيع الأسمدة العضوية في العراق، وتحويل مخلفات الثروة الحيوانية إلى سماد عضوي عالي الجودة يحسن خصوبة التربة ويدعم الزراعة المستدامة.",
-
     goal4_title: "الأمن الغذائي<br>ومعايير الجودة",
     goal4_description:
       "تحقيق أعلى معايير جودة وسلامة الغذاء محلياً وعالمياً مع دعم رؤية العراق في تعزيز الأمن الغذائي وتقليل الاعتماد على الاستيراد.",
-
     learn_more: "← اعرف المزيد",
-
-    // CTA
     cta_title: "السباق نحو<br>الصفر الصافي<br>لا يمكن أن يكون<br>جهدًا جماعيًا",
     cta_text1:
       "تشارك مينيرفا فودز في مبادرات تعاونية لتعزيز الممارسات المستدامة عبر سلسلة قيمة لحوم البقر. نحن نؤمن بأن تحقيق صافي انبعاثات صفرية يتطلب عملاً جماعيًا من جميع أصحاب المصلحة - من المزارعين والموردين إلى العملاء والمستهلكين.",
     cta_text2:
       "نحن ملتزمون بالشفافية والمساءلة في رحلة الاستدامة الخاصة بنا. من خلال الشراكات والابتكار والتحسين المستمر، نعمل نحو مستقبل أكثر استدامة للصناعة والكوكب. انضم إلينا في هذا الجهد الجماعي لإحداث تغيير إيجابي وبناء نظام غذائي أكثر استدامة للأجيال القادمة.",
-
-    // Related
     related_title: "محتوى ذو صلة",
     related_tag1: "تقرير الاستدامة",
     related_title1: "تقرير الاستدامة السنوي 2024",
@@ -507,14 +423,10 @@ const translations = {
     related_title2: "مبادرات الطاقة المتجددة",
     related_tag3: "التأثير الاجتماعي",
     related_title3: "برامج تنمية المجتمع",
-
-    // Footer
     footer_privacy: "سياسة الخصوصية",
     footer_terms: "شروط الخدمة",
     footer_cookies: "سياسة ملفات تعريف الارتباط",
     footer_copyright: "© 2025 مينيرفا فودز. جميع الحقوق محفوظة.",
-
-    // About Page
     about_hero_title: "عن خيرات العراق",
     about_hero_subtitle: "قيادة ثورة الثروة الحيوانية والزراعة في العراق",
     about_overview_title: "قصتنا",
@@ -554,8 +466,6 @@ const translations = {
     about_team3_role: "مدير العمليات",
     about_team4_name: "ماريا سيلفا",
     about_team4_role: "مدير الاستدامة",
-
-    // Products Page
     products_hero_title: "منتجات الثروة الحيوانية والزراعة العراقية المتميزة",
     products_hero_subtitle: "من مزارعنا المتكاملة إلى مائدتكم، التميز في كل منتج",
     products_categories_title: "مجموعة منتجاتنا",
@@ -593,8 +503,6 @@ const translations = {
     products_cta_title: "مهتم بمنتجاتنا؟",
     products_cta_text: "اتصل بفريق المبيعات لدينا لمعرفة المزيد عن مجموعة منتجاتنا وخيارات التوزيع.",
     products_cta_button: "اتصل بنا",
-
-    // Recipes Page
     recipes_hero_title: "وصفات عراقية تقليدية",
     recipes_hero_subtitle: "اكتشف طرقًا رائعة للطهي مع لحم البقر العراقي الممتاز لدينا",
     recipes_filter_all: "جميع الوصفات",
@@ -630,11 +538,7 @@ const translations = {
     tip2_text: "اترك لحم البقر يرتاح دائمًا لمدة 5-10 دقائق بعد الطهي للاحتفاظ بالعصائر.",
     tip3_title: "تتبيل سخي",
     tip3_text: "لا تخجل من الملح والفلفل - فهما يعززان النكهات الطبيعية.",
-
-    // Contact page
     contact_hero_title: "تواصل معنا",
-
-    // Why Us Page
     why_us_hero_title: "لماذا تختار خيرات العراق؟",
     why_us_hero_subtitle: "شريكك الموثوق في نهضة العراق الزراعية",
     why_us_experience_title: "ثلاثة عقود من التميز",
@@ -660,8 +564,6 @@ const translations = {
     why_us_cta_title: "هل أنت مستعد للشراكة مع الرائد الزراعي في العراق؟",
     why_us_cta_text: "انضم إلينا في بناء مستقبل مستدام للأمن الغذائي والتنمية الاقتصادية في العراق.",
     why_us_cta_button: "اتصل بنا اليوم",
-
-    // Vision Page
     vision_hero_title: "رؤيتنا لمستقبل العراق",
     vision_hero_subtitle: "قيادة نهضة غذائية متكاملة",
     vision_main_title: "رؤيتنا",
@@ -715,14 +617,10 @@ const translations = {
     contact_farm1_address: "الحسينية - بغداد - العراق",
     contact_farm2_title: "المزرعة الثانية: الزبيدية",
     contact_farm2_address: "قضاء الزبيدية - محافظة واسط",
-
-    // Footer
     footer_privacy: "سياسة الخصوصية",
     footer_terms: "شروط الخدمة",
     footer_cookies: "سياسة ملفات تعريف الارتباط",
     footer_copyright: "© 2025 خيرات العراق. جميع الحقوق محفوظة.",
-
-    // Partners Section
     partners_title: "شركاؤنا الرئيسيون في التصدير",
     partners_subtitle: "نعمل مع شركات عالمية رائدة",
     partner1_name: "مينيرفا إس.إيه.",
@@ -733,38 +631,26 @@ const translations = {
     partner3_desc: "شركة برازيلية تأسست عام 1994، متخصصة في استيراد/تصدير الماشية الحية ولحوم البقر",
   },
 }
-
-// Language switching function
 function changeLanguage(lang) {
   const html = document.documentElement
   const body = document.body
-
-  // Set language and direction
   html.setAttribute("lang", lang)
   html.setAttribute("dir", lang === "ar" ? "rtl" : "ltr")
   body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr")
-
-  // Update all translatable elements
   document.querySelectorAll("[data-translate]").forEach((element) => {
     const key = element.getAttribute("data-translate")
     if (translations[lang] && translations[lang][key]) {
       element.innerHTML = translations[lang][key]
     }
   })
-
-  // Save language preference
   localStorage.setItem("preferredLanguage", lang)
 }
-
-// Initialize language on page load
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("preferredLanguage") || "en"
   const languageSelector = document.getElementById("languageSelector")
-
   if (languageSelector) {
     languageSelector.value = savedLang
     changeLanguage(savedLang)
-
     languageSelector.addEventListener("change", (e) => {
       changeLanguage(e.target.value)
     })

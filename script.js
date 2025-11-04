@@ -1,48 +1,29 @@
-// Import AOS library
-import AOS from "aos"
-
-// Timeline carousel functionality
 document.addEventListener("DOMContentLoaded", () => {
-  AOS.init({
-    duration: 800,
-    easing: "ease-in-out",
-    once: true,
-    offset: 100,
-  })
-
   const timeline = document.querySelector(".timeline")
   const dots = document.querySelectorAll(".dot")
   const cards = document.querySelectorAll(".timeline-card")
-
-  // Only enable carousel on mobile
-  if (window.innerWidth <= 1024) {
+  if (timeline && dots.length > 0 && cards.length > 0 && window.innerWidth <= 1024) {
     let currentIndex = 0
-
     dots.forEach((dot, index) => {
       dot.addEventListener("click", () => {
         currentIndex = index
         updateCarousel()
       })
     })
-
     function updateCarousel() {
-      const cardWidth = cards[0].offsetWidth + 30 // card width + gap
+      const cardWidth = cards[0].offsetWidth + 30 
       timeline.scrollTo({
         left: cardWidth * currentIndex,
         behavior: "smooth",
       })
-
       dots.forEach((dot, index) => {
         dot.classList.toggle("active", index === currentIndex)
       })
     }
-
-    // Update active dot on scroll
     timeline.addEventListener("scroll", () => {
       const cardWidth = cards[0].offsetWidth + 30
       const scrollPosition = timeline.scrollLeft
       const newIndex = Math.round(scrollPosition / cardWidth)
-
       if (newIndex !== currentIndex) {
         currentIndex = newIndex
         dots.forEach((dot, index) => {
@@ -51,8 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   }
-
-  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault()
@@ -65,22 +44,72 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
-
   const mobileMenuToggle = document.querySelector(".mobile-menu-toggle")
   const nav = document.querySelector(".nav")
-
-  if (mobileMenuToggle) {
-    mobileMenuToggle.addEventListener("click", () => {
-      mobileMenuToggle.classList.toggle("active")
-      nav.classList.toggle("active")
+  if (mobileMenuToggle && nav) {
+    const navOverlay = document.createElement('div')
+    navOverlay.className = 'nav-overlay'
+    document.body.appendChild(navOverlay)
+    const navClose = document.createElement('button')
+    navClose.className = 'nav-close'
+    navClose.innerHTML = '×'
+    navClose.setAttribute('aria-label', 'Close navigation menu')
+    nav.appendChild(navClose)
+    const openMenu = () => {
+      mobileMenuToggle.classList.add("active")
+      nav.classList.add("active")
+      navOverlay.classList.add("active")
+      mobileMenuToggle.setAttribute("aria-expanded", "true")
+      document.body.classList.add("no-scroll")
+      nav.style.transform = 'translateX(0)'
+    }
+    const closeMenu = () => {
+      mobileMenuToggle.classList.remove("active")
+      nav.classList.remove("active")
+      navOverlay.classList.remove("active")
+      mobileMenuToggle.setAttribute("aria-expanded", "false")
+      document.body.classList.remove("no-scroll")
+      nav.style.transform = 'translateX(100%)'
+    }
+    mobileMenuToggle.setAttribute("aria-controls", "site-navigation")
+    mobileMenuToggle.setAttribute("aria-expanded", "false")
+    mobileMenuToggle.setAttribute("aria-label", "Toggle navigation menu")
+    if (window.innerWidth <= 1024) {
+      nav.style.transform = 'translateX(100%)'
+    }
+    mobileMenuToggle.addEventListener("click", (e) => {
+      e.stopPropagation()
+      if (!nav.classList.contains("active")) {
+        openMenu() 
+      }
+    })
+    navClose.addEventListener("click", (e) => {
+      e.stopPropagation()
+      closeMenu()
+    })
+    navOverlay.addEventListener("click", (e) => {
+    })
+    document.addEventListener("keydown", (e) => {
+    })
+    nav.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", (e) => {
+      })
+    })
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1024) {
+        closeMenu()
+        nav.style.transform = '' 
+      } else {
+        if (!nav.classList.contains("active")) {
+          nav.style.transform = 'translateX(100%)' 
+        }
+      }
     })
   }
-
   const observerOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -50px 0px",
   }
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -88,16 +117,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   }, observerOptions)
-
-  // Observe sections for scroll animations
   document.querySelectorAll("section").forEach((section) => {
     observer.observe(section)
   })
-
   const animateCounter = (element, target, duration = 2000) => {
     let start = 0
     const increment = target / (duration / 16)
-
     const updateCounter = () => {
       start += increment
       if (start < target) {
@@ -107,23 +132,22 @@ document.addEventListener("DOMContentLoaded", () => {
         element.textContent = target
       }
     }
-
     updateCounter()
   }
-
-  // Animate timeline years when they come into view
-  const yearObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && !entry.target.classList.contains("animated")) {
-        const year = Number.parseInt(entry.target.textContent)
-        entry.target.textContent = "0"
-        animateCounter(entry.target, year)
-        entry.target.classList.add("animated")
-      }
+  const timelineYears = document.querySelectorAll(".timeline-year")
+  if (timelineYears.length > 0) {
+    const yearObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.classList.contains("animated")) {
+          const year = Number.parseInt(entry.target.textContent)
+          entry.target.textContent = "0"
+          animateCounter(entry.target, year)
+          entry.target.classList.add("animated")
+        }
+      })
+    }, observerOptions)
+    timelineYears.forEach((year) => {
+      yearObserver.observe(year)
     })
-  }, observerOptions)
-
-  document.querySelectorAll(".timeline-year").forEach((year) => {
-    yearObserver.observe(year)
-  })
+  }
 })

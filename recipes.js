@@ -1,17 +1,11 @@
-// Recipe filtering functionality
 document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll(".filter-btn")
   const recipeItems = document.querySelectorAll(".recipe-item")
-
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      // Remove active class from all buttons
       filterButtons.forEach((btn) => btn.classList.remove("active"))
-      // Add active class to clicked button
       button.classList.add("active")
-
       const filterValue = button.getAttribute("data-filter")
-
       recipeItems.forEach((item) => {
         if (filterValue === "all") {
           item.style.display = "block"
@@ -38,8 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   })
-
-  // Recipe card click handlers
   const recipeButtons = document.querySelectorAll(".btn-recipe")
   recipeButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
