@@ -12,13 +12,14 @@
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
                     <div class="logo">
                     <img style="max-width: 90px;" src="./logo-header.png" alt="Khayrat Al-Iraq">
                 </div>
-                <nav class="nav" id="site-navigation">
+                <nav class="nav">
                     <a href="index.html" class="nav-link active" data-translate="nav_home">Home</a>
                     <a href="products.html" class="nav-link" data-translate="nav_products">Products</a>
                     <a href="why-us.html" class="nav-link" data-translate="nav_why_us">Why Us?</a>
@@ -42,12 +43,14 @@
         </div>
     </header>
 
+    <!-- Breadcrumb -->
     <div class="breadcrumb">
         <div class="container">
             <span>🏠 <span data-translate="breadcrumb_home">Home</span></span>
         </div>
     </div>
 
+    <!-- Hero Section -->
     <section class="hero" style="background-image: linear-gradient(135deg, rgba(44, 62, 80, 0.7), rgba(52, 73, 94, 0.7)), url('./public/photos/khirat (3).jpeg');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -64,11 +67,20 @@
         </div>
     </section>
 
+    <!-- Company Overview -->
     <section class="company-overview">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h2 class="section-title" data-translate="about_overview_title">Our Story</h2>
+                <div class="col-lg-12" data-aos="fade-right">
+
+                     <img 
+            id="aboutImg"
+            src="./about-company-en.png" 
+            alt="Leadership Team" 
+            class="img-fluid rounded" 
+            data-aos="zoom-in" 
+            data-translate-src="about_image" >
+                    <!-- <h2 class="section-title" data-translate="about_overview_title">Our Story</h2>
                     <p data-translate="about_overview_text1">
                         Minerva Foods is one of the largest beef exporters in South America and a leading player in the global meat industry. 
                         With over six decades of experience, we have built a reputation for quality, innovation, and sustainability.
@@ -77,15 +89,33 @@
                         Our journey began in 1957, and today we operate state-of-the-art facilities across South America, serving customers 
                         in more than 100 countries worldwide. We are committed to delivering premium quality products while maintaining the 
                         highest standards of food safety, animal welfare, and environmental responsibility.
-                    </p>
+                    </p> -->
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <!-- <div class="col-lg-6" data-aos="fade-left">
                     <img src="./public/aerial-view-meat-processing-facility.jpg" alt="Minerva Foods Facility" class="img-fluid rounded">
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
+    <section>
+        <div class="container">
+
+            <div class="row">
+
+                 <img 
+            id="companyActivities"
+            src="./activities-en.png" 
+            alt="Company Activities" 
+            class="img-fluid rounded" 
+            data-aos="zoom-in" 
+            data-translate-src="activities_image" >
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
             <div class="row text-center">
@@ -117,8 +147,24 @@
         </div>
     </section>
 
+    <!-- Mission & Vision -->
     <section class="mission-vision-section">
         <div class="container">
+               <img 
+            id="companyJourney"
+            src="./journey-en.png" 
+            alt="Company Journey" 
+            class="img-fluid rounded" 
+            data-aos="zoom-in" 
+            data-translate-src="journey_image" >
+
+                 <img 
+            id="companyJourneyDev"
+            src="./journey-development-en.png" 
+            alt="Company Journey" 
+            class="img-fluid rounded" 
+            data-aos="zoom-in" 
+            data-translate-src="journeydev_image" >
             <div class="row">
                 <div class="col-lg-6 mb-4" data-aos="flip-left">
                     <div class="mission-card">
@@ -153,6 +199,7 @@
         </div>
     </section>
 
+    <!-- Values Section -->
     <section class="values-section">
         <div class="container">
             <h2 class="section-title text-center mb-5" data-translate="about_values_title">Our Values</h2>
@@ -175,64 +222,35 @@
                         <p data-translate="about_value3_text">We embrace innovation to continuously improve our processes and products.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="value-card">
-                        <h4 data-translate="about_value4_title">Sustainability</h4>
-                        <p data-translate="about_value4_text">We are committed to sustainable practices that protect our environment.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="value-card">
-                        <h4 data-translate="about_value5_title">Respect</h4>
-                        <p data-translate="about_value5_text">We treat all people with dignity and respect, fostering an inclusive culture.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="value-card">
-                        <h4 data-translate="about_value6_title">Collaboration</h4>
-                        <p data-translate="about_value6_text">We work together with partners and stakeholders to achieve shared goals.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- Team Section -->
     <section class="team-section">
         <div class="container">
-            <h2 class="section-title text-center mb-5" data-translate="about_team_title">Leadership Team</h2>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
-                    <div class="team-card">
-                        <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="CEO" class="team-img">
-                        <h4 data-translate="about_team1_name">Fernando Galletti de Queiroz</h4>
-                        <p class="team-role" data-translate="about_team1_role">Chief Executive Officer</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="team-card">
-                        <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="CFO" class="team-img">
-                        <h4 data-translate="about_team2_name">Edison Ticle</h4>
-                        <p class="team-role" data-translate="about_team2_role">Chief Financial Officer</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="team-card">
-                        <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="COO" class="team-img">
-                        <h4 data-translate="about_team3_name">Tacito Neto</h4>
-                        <p class="team-role" data-translate="about_team3_role">Chief Operating Officer</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="team-card">
-                        <img src="./public/professional-business-executive-portrait-sitting.jpg" alt="CSO" class="team-img">
-                        <h4 data-translate="about_team4_name">Maria Silva</h4>
-                        <p class="team-role" data-translate="about_team4_role">Chief Sustainability Officer</p>
-                    </div>
-                </div>
-            </div>
+            
+             <img 
+            id="teamImage"
+            src="./our-products-en.jpg" 
+            alt="Leadership Team" 
+            class="img-fluid rounded" 
+            data-aos="zoom-in" 
+            data-translate-src="team_image"
+        >
+         <img 
+            id="a3lafImage"
+            src="./a3laf-en.png" 
+            alt="Leadership Team" 
+            class="img-fluid rounded" 
+            data-aos="zoom-in" 
+            data-translate-src="a3laf_image"
+        >
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -270,6 +288,7 @@
     once: true,
   });
 </script>
+
 
     <script src="translations.js"></script>
     <script src="script.js"></script>

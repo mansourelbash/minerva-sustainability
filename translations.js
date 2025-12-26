@@ -24,7 +24,7 @@ const translations = {
     vision_hero_title: "Our Vision for Iraq's Future",
     vision_hero_subtitle: "Leading an integrated food renaissance",
     vision_main_title: "Our Vision",
-    vision_main_text: "We aspire to lead an integrated food renaissance in Iraq through an advanced agricultural and livestock production system, relying on major strategic projects such as manufacturing Iraq's largest organic fertilizer facility, establishing a modern slaughterhouse with international standards, and achieving self-sufficiency in feed through our farms exceeding 6,000 dunums.",
+    vision_main_text: "Our vision is to be the leader in Iraq's livestock sector by providing distinguished products that effectively contribute to achieving national food security. We aim to lead industry development by adopting the best sustainable farming practices, which prioritize animal welfare, environmental protection, and excellence in all our operations. We are committed to setting new quality standards, based on solid foundations of animal welfare, environmental sustainability, and the constant pursuit of excellence. Our strategy aims to expand our scope of impact, diversify our products, and build strong strategic partnerships in local and global markets. Through our steadfast commitment to innovation, sustainability, and operational efficiency, we aspire to create a lasting positive impact on our community and ensure a better quality of life for our customers, partners, and employees.",
     vision_belief_title: "Our Belief",
     vision_belief_text: "We believe that national food security begins with fertile land, where feed integrates with livestock, and their waste transforms into productive energy that revives the soil and supports a sustainable and healthy economy for generations.",
     vision_future_projects_title: "Future Strategic Projects",
@@ -132,12 +132,11 @@ const translations = {
     about_stat2: "Head Capacity",
     about_stat3: "Dunums of Agricultural Land",
     about_stat4: "Key Export Partners",
-    about_mission_title: "Our Mission",
+    about_mission_title: "Our products and services",
     about_mission_text:
-      "To lead an integrated food renaissance in Iraq through advanced agricultural and livestock production systems, contributing to national food security and economic development.",
+      "Through studied breeding, sustainable practices, and unwavering commitment, we strive to become the benchmark standard in the livestock industry.",
     about_vision_title: "Our Vision",
-    about_vision_text:
-      "We aspire to lead Iraq's integrated food renaissance through an advanced agricultural and livestock production system, relying on major strategic projects such as manufacturing Iraq's largest organic fertilizer facility, establishing a modern slaughterhouse with international standards, and achieving self-sufficiency in feed.",
+    about_vision_text: "Our vision is to be the leader in Iraq's livestock sector by providing distinguished products that effectively contribute to achieving national food security. We aim to lead industry development by adopting the best sustainable farming practices, which prioritize animal welfare, environmental protection, and excellence in all our operations. We are committed to setting new quality standards, based on solid foundations of animal welfare, environmental sustainability, and the constant pursuit of excellence. Our strategy aims to expand our scope of impact, diversify our products, and build strong strategic partnerships in local and global markets. Through our steadfast commitment to innovation, sustainability, and operational efficiency, we aspire to create a lasting positive impact on our community and ensure a better quality of life for our customers, partners, and employees.",
     about_values_title: "Our Core Values",
     about_value1_title: "Food Integration",
     about_value1_text: "Added value in every production chain",
@@ -277,6 +276,12 @@ const translations = {
     vision_impact3: "Create sustainable employment",
     vision_impact4: "Support national economic development",
     vision_impact5: "Promote environmental sustainability",
+    team_image: "./our-products-en.jpg",
+    about_image: "./about-company-en.png",
+    activities_image: "./activities-en.png",
+    journey_image: "./journey-en.png",
+    a3laf_image: "./a3laf-en.png",
+    journeydev_image: "./journey-development-en.png",
     vision_cta_title: "Join Our Vision for Iraq's Future",
     vision_cta_text: "Be part of Iraq's agricultural renaissance and contribute to building a sustainable food system for generations to come.",
     vision_cta_button: "Partner With Us",
@@ -300,7 +305,7 @@ const translations = {
     contact_address_title: "Head Office",
     contact_address: "Baghdad - Al-Jadiriya - Near Iraqi Central Bank",
     contact_phone_title: "Phone",
-    contact_phone_number: "+964 780 013 3337",
+    contact_phone_number: "+964 773 333 1332",
     contact_email_title: "Email",
     contact_email_address: "info@khayrat-aliraq.com",
     contact_hours_title: "Business Hours",
@@ -363,7 +368,7 @@ const translations = {
       "في خيرات العراق، نطمح إلى قيادة نهضة غذائية متكاملة في العراق من خلال منظومة إنتاج زراعي وحيواني متطورة. رؤيتنا مبنية على مشاريع استراتيجية كبرى تشمل تصنيع األسمدة العضوية األكبر من نوعه في البالد، وإنشاء مجزرة حديثة بمعايير عالمية، وتحقيق االكتفاء الذاتي من األعالف عبر استثمار مزارعنا التي تتجاوز مساحتها 6000 دونم.",
     roadmap_title: "رحلتنا: من 1994 إلى 2025",
     roadmap_description:
-      "تأسست شركتنا في عام 1994 بطاقة إنتاجية أولية بلغت 150 عجل، وركزت منذ البداية على تربية وتسمين العجول بجودة عالية. من خلال التوسعات الاستراتيجية والابتكارات التقنية، نمت لتصبح أكبر عملية تسمين ماشية في العراق.",
+      "تأسست الشركة بهدف تقديم منتجات ثروة حيوانية عالية الجودة من خلال تربية وتسمين العجول، الأغنام، الجاموس والأسماك وأصبحت مع الوقت من الشركات الرائدة في ممارسات الزراعة المستدامة التي تساهم في الحفاظ على الأمن الغذائي الوطني.",
     badge_current: "الحالي",
     badge_future: "المستقبل",
     timeline_2025_title: "التأسيس والنمو المبكر (1994-2007)",
@@ -429,34 +434,28 @@ const translations = {
     footer_copyright: "© 2025 مينيرفا فودز. جميع الحقوق محفوظة.",
     about_hero_title: "عن خيرات العراق",
     about_hero_subtitle: "قيادة ثورة الثروة الحيوانية والزراعة في العراق",
-    about_overview_title: "قصتنا",
+    about_overview_title: "عن الشركة",
     about_overview_text1:
-      "تأسست خيرات العراق في عام 1994 بطاقة إنتاجية أولية بلغت 150 عجل، ونمت لتصبح أكبر شركة ثروة حيوانية في العراق. منذ بداياتنا المتواضعة، ركزنا على تربية وتسمين العجول بجودة عالية لتلبية الطلب المحلي.",
+      "تأسست الشركة بهدف تقديم منتجات ثروة حيوانية عالية الجودة من خلال تربية وتسمين العجول، الأغنام، الجاموس والأسماك وأصبحت مع الوقت من الشركات الرائدة في ممارسات الزراعة المستدامة التي تساهم في الحفاظ على الأمن الغذائي الوطني.",
     about_overview_text2:
       "رحلتنا تمثل الابتكار والتوسع المستمر. في عام 2021، أكملنا أكبر منشأة ثروة حيوانية في العراق بطاقة 60,000 رأس في الزبيدية، محافظة واسط. مع أراضينا الزراعية البالغة 6,000 دونم، أنشأنا نظاماً زراعياً-حيوانياً متكاملاً يدعم الأمن الغذائي العراقي.",
     about_stat1: "سنوات من التميز",
     about_stat2: "طاقة رؤوس الماشية",
     about_stat3: "دونم من الأراضي الزراعية",
     about_stat4: "شركاء تصدير رئيسيين",
-    about_mission_title: "مهمتنا",
+    about_mission_title: "منتاجتنا وخدماتنا",
     about_mission_text:
-      "قيادة نهضة غذائية متكاملة في العراق من خلال أنظمة إنتاج زراعي وحيواني متطورة، والمساهمة في الأمن الغذائي الوطني والتنمية الاقتصادية.",
+      "من خلال التربية المدروسة والممارسات المستدامة والالتزام المتواصل، نسعى لنكون المعيار المرجعي في صناعة الثروة الحيوانية.",
     about_vision_title: "رؤيتنا",
-    about_vision_text:
-      "نطمح إلى قيادة النهضة الغذائية المتكاملة للعراق من خلال منظومة إنتاج زراعي وحيواني متطورة، تعتمد على مشاريع استراتيجية كبرى مثل تصنيع أكبر منشأة أسمدة عضوية في العراق، وإنشاء مجزرة حديثة بمعايير دولية، وتحقيق الاكتفاء الذاتي من الأعلاف.",
+    about_vision_text: "رؤيتنا هي الريادة في قطاع الثروة الحيوانية في العراق من خلال تقديم منتجات متميزة تساهم بشكل فعَّال في تحقيق الأمن الغذائي الوطني. نسعى لقيادة تطوير الصناعة عبر تبني أفضل ممارسات الزراعة المستدامة، التي تضع في مقدمة أولوياتها رعاية الحيوان، وحماية البيئة، والتميز في جميع عملياتنا. نلتزم برسم معايير جديدة للجودة، قائمة على أسس راسخة من الرفق بالحيوان، والاستدامة البيئية، والسعي الدائم لتقديم الأفضل. يهدف استراتيجيتنا إلى توسيع نطاق تأثيرنا، وتنويع منتجاتنا، وبناء شراكات استراتيجية قوية في الأسواق المحلية والعالمية. ومن خلال التزامنا الراسخ بالابتكار، والاستدامة، والكفاءة التشغيلية، فإننا نطمح إلى إحداث تأثير إيجابي ودائم في مجتمعنا، وضمان حياة أفضل لعملائنا وشركائنا والعاملين معنا.",
     about_values_title: "قيمنا الأساسية",
-    about_value1_title: "التكامل الغذائي",
+    about_value1_title: "التراهة",
     about_value1_text: "قيمة مضافة في كل حلقة إنتاجية",
     about_value2_title: "الاستدامة",
     about_value2_text: "نمنح الأرض ما نأخذ منها",
     about_value3_title: "الابتكار",
     about_value3_text: "تقنيات زراعية متقدمة وقوة معرفية متنامية",
-    about_value4_title: "المسؤولية الوطنية",
-    about_value4_text: "غذاء صحي للمواطن ودعم للاقتصاد الوطني",
-    about_value5_title: "السلامة والجودة",
-    about_value5_text: "التزام بمعايير دولية في كل خطوة",
-    about_value6_title: "الإشراف البيئي",
-    about_value6_text: "خلق دورات مستدامة تفيد كلاً من الزراعة والثروة الحيوانية",
+    
     about_team_title: "فريق القيادة",
     about_team1_name: "فرناندو غاليتي دي كيروز",
     about_team1_role: "الرئيس التنفيذي",
@@ -567,7 +566,8 @@ const translations = {
     vision_hero_title: "رؤيتنا لمستقبل العراق",
     vision_hero_subtitle: "قيادة نهضة غذائية متكاملة",
     vision_main_title: "رؤيتنا",
-    vision_main_text: "نحن نطمح لقيادة نهضة غذائية متكاملة في العراق من خلال نظام إنتاج زراعي وحيواني متطور، معتمدين على مشاريع استراتيجية كبرى مثل تصنيع أكبر منشأة أسمدة عضوية في العراق، وإقامة مجزرة حديثة بمعايير دولية، وتحقيق الاكتفاء الذاتي من الأعلاف عبر مزارعنا التي تتجاوز 6,000 دونم.",
+
+    vision_main_text: "رؤيتنا هي الريادة في قطاع الثروة الحيوانية في العراق من خلال تقديم منتجات متميزة تساهم بشكل فعَّال في تحقيق الأمن الغذائي الوطني. نسعى لقيادة تطوير الصناعة عبر تبني أفضل ممارسات الزراعة المستدامة، التي تضع في مقدمة أولوياتها رعاية الحيوان، وحماية البيئة، والتميز في جميع عملياتنا. نلتزم برسم معايير جديدة للجودة، قائمة على أسس راسخة من الرفق بالحيوان، والاستدامة البيئية، والسعي الدائم لتقديم الأفضل. يهدف استراتيجيتنا إلى توسيع نطاق تأثيرنا، وتنويع منتجاتنا، وبناء شراكات استراتيجية قوية في الأسواق المحلية والعالمية. ومن خلال التزامنا الراسخ بالابتكار، والاستدامة، والكفاءة التشغيلية، فإننا نطمح إلى إحداث تأثير إيجابي ودائم في مجتمعنا، وضمان حياة أفضل لعملائنا وشركائنا والعاملين معنا.",
     vision_belief_title: "معتقدنا",
     vision_belief_text: "نحن نؤمن بأن الأمن الغذائي الوطني يبدأ من الأرض الخصبة، حيث يتكامل العلف مع الثروة الحيوانية، وتتحول مخلفاتها إلى طاقة منتجة تحيي التربة وتدعم اقتصاداً مستداماً وصحياً للأجيال.",
     vision_future_projects_title: "المشاريع الاستراتيجية المستقبلية",
@@ -606,12 +606,19 @@ const translations = {
     contact_address_title: "المكتب الرئيسي",
     contact_address: "بغداد - الجادرية - قرب البنك المركزي العراقي",
     contact_phone_title: "الهاتف",
-    contact_phone_number: "+964 780 013 3337",
+    contact_phone_number: "+964 773 333 1332",
     contact_email_title: "البريد الإلكتروني",
     contact_email_address: "info@khayrat-aliraq.com",
     contact_hours_title: "ساعات العمل",
     contact_hours: "الأحد - الخميس: 8:00 صباحًا - 4:00 مساءً<br>الجمعة - السبت: مغلق",
     contact_follow: "تابعنا",
+    team_image: "./our-products-ar.jpg",
+    about_image: "./about-company-ar.png",
+    activities_image: "./activities-ar.png",
+    journey_image: "./journey-ar.png",
+    a3laf_image: "./a3laf-ar.png",
+    journeydev_image: "./journey-development-ar.png",
+
     contact_locations_title: "مواقعنا",
     contact_farm1_title: "المزرعة الأولى: الحسينية",
     contact_farm1_address: "الحسينية - بغداد - العراق",
@@ -634,17 +641,30 @@ const translations = {
 function changeLanguage(lang) {
   const html = document.documentElement
   const body = document.body
+
   html.setAttribute("lang", lang)
   html.setAttribute("dir", lang === "ar" ? "rtl" : "ltr")
   body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr")
+
+  // تغيير النصوص
   document.querySelectorAll("[data-translate]").forEach((element) => {
     const key = element.getAttribute("data-translate")
     if (translations[lang] && translations[lang][key]) {
       element.innerHTML = translations[lang][key]
     }
   })
+
+  // تغيير الصور
+  document.querySelectorAll("[data-translate-src]").forEach((element) => {
+    const key = element.getAttribute("data-translate-src")
+    if (translations[lang] && translations[lang][key]) {
+      element.src = translations[lang][key]
+    }
+  })
+
   localStorage.setItem("preferredLanguage", lang)
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("preferredLanguage") || "en"
   const languageSelector = document.getElementById("languageSelector")

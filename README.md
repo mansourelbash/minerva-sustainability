@@ -45,7 +45,7 @@ Khayrat Al-Iraq is a leading company in livestock and agricultural production in
 
 ## معلومات الاتصال / Contact Information
 
-- **الهاتف / Phone**: +964 780 013 3337
+- **الهاتف / Phone**: +964 773 333 1332
 - **البريد الإلكتروني / Email**: info@khayrat-aliraq.com
 - **العنوان / Address**: بغداد - الجادرية - قرب البنك المركزي العراقي
 
